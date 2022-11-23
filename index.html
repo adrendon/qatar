@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-.video-outer {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.video-container {
-  position: relative;
-  height: 100%;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  width: 50%;
-  height: 58.5vh;
-  max-width: 50%;
-}
-@media (max-width: 1024px) {
-  .video-container iframe {
-    height: 40.5vh;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-</style>
-<body>
-  <div class="video-outer">
-    <div class="video-container">
-      <iframe id="ppp" class="embed-responsive-item" frameborder="0" allow="encrypted-media" allowfullscreen scrolling=no allowtransparency src="https://futbol-tv.online/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdC5waHA/dXBkJmdldD1hSFIwY0hNNkx5OWtkSFp2ZEhRdFlXSmpMbUZyWVcxaGFYcGxaQzV1WlhRdlpHRnphRjlzYVhabFh6RXdOVGN2YldGdWFXWmxjM1F1YlhCayZrZXk9WVRkbE1EbGpObVkwTjJGbU5UZGxPVGs1WWpjNE9XVmlOVFJrTXpJMU5XUT0ma2V5Mj1Nall6Wmpaa1lqRXlaRFptT1dGaE56Sm1NbU5qT1dJd1pXWXlaVEkyWWpJPQ==" name="iframe" id="iframe" scrolling="no" frameBorder="0" title="Reproductor 1" alt="Reproducir" allowfullscreen></iframe>   		  </div>
-  </div>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .video-outer {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+      .video-container {
+        position: relative;
+        height: 100%;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        width: 50%;
+        height: 58.5vh;
+        max-width: 50%;
+      }
+      @media (max-width: 1024px) {
+        .video-container iframe {
+          height: 40.5vh;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-outer">
+      <div class="video-container">
+        <div class="relative h-0 overflow-hidden max-w-full w-full" style="padding-bottom: 50%">
+          <iframe id="ppp" class="embed-responsive-item absolute top-0 left-0 w-full h-full" frameborder="0" allow="encrypted-media" allowfullscreen scrolling=no allowtransparency src="https://futbol-tv.online/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdC5waHA/dXBkJmdldD1hSFIwY0hNNkx5OWtkSFp2ZEhRdFlXSmpMbUZyWVcxaGFYcGxaQzV1WlhRdlpHRnphRjlzYVhabFh6RXdOVGN2YldGdWFXWmxjM1F1YlhCayZrZXk9WVRkbE1EbGpObVkwTjJGbU5UZGxPVGs1WWpjNE9XVmlOVFJrTXpJMU5XUT0ma2V5Mj1Nall6Wmpaa1lqRXlaRFptT1dGaE56Sm1NbU5qT1dJd1pXWXlaVEkyWWpJPQ==" name="iframe" id="iframe" scrolling="no" frameBorder="0" title="Reproductor 1" alt="Reproducir" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
