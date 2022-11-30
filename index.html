@@ -7,31 +7,35 @@
   <title>Document</title>
 </head>
 <style>
-  .menu {
-       width: 50%;
+  body {
+    margin: 0;
+    padding: 0;
    }
-   .bodyContent {
-       width: 50%;
+  .iframeVideo {
+      width: 50%;
    }
-   body {
-       margin: 0;
-       padding: 0;
+   #root {
+    position: fixed;
+    width: 100%;
+    height: 100%;
    }
-   div#root {
-       position: fixed;
-       width: 100%;
-       height: 100%;
+   #root > iframe {
+    height: 490px;
+    float:left;
+    box-sizing:border-box;
    }
-   div#root > iframe {
-       height: 490px;
-       float:left;
-       box-sizing:border-box;
-   }
+   @media (max-width: 1024px) {
+    #root > iframe {
+      height: 40.5vh;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 </style>
 <body>
   <div id="root">
-    <iframe class="menu" allow="encrypted-media" src="https://megadeportes.live/embed/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdC5waHA/Z2V0PWFIUjBjSE02THk5a2RIWnZkSFF0WVdKakxtRnJZVzFoYVhwbFpDNXVaWFF2WkdGemFGOXNhWFpsWHpFd05qRXZiV0Z1YVdabGMzUXViWEJrJmtleT1OekV4T1RBMk9XSTVPVEF4TldJMFpXSTVaV1UwTXpBd05UYzNNems1WlRJPSZrZXkyPVlqZzVPREkzWTJNNU56QmpaRGM0WkdFNE9ESm1abU5oTXpVd05HTTNOelE9"></iframe>
-    <iframe class="bodyContent" allow="encrypted-media" src="https://megadeportes.live/embed/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdDIucGhwP2dldD1hSFIwY0hNNkx5OHhNRFl6TFd4c0xYWnZjeTVrZEhadmRIUXVZMjl0TDBSQlUwaGZSRUZUU0M5TWFYWmxMMk5vWVc1dVpXd29URXd0VEdsMlpWOHhNRFl6S1M5dFlXNXBabVZ6ZEM1dGNHUT0ma2V5PVltRXlaalkzTTJVM09EVTJNek5rTkdFMVpHTm1OemRtTVdWbFl6WmhaRFk9JmtleTI9TkdJM01ERTROREZrT1RrNFlUVTJZelJqWlRobFpUSXlZVGcyTmpRNU5XST0="></iframe>
-</div>
+    <iframe class="iframeVideo" allow="encrypted-media" src="https://megadeportes.live/embed/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdC5waHA/Z2V0PWFIUjBjSE02THk5a2RIWnZkSFF0WVdKakxtRnJZVzFoYVhwbFpDNXVaWFF2WkdGemFGOXNhWFpsWHpFd05qRXZiV0Z1YVdabGMzUXViWEJrJmtleT1OekV4T1RBMk9XSTVPVEF4TldJMFpXSTVaV1UwTXpBd05UYzNNems1WlRJPSZrZXkyPVlqZzVPREkzWTJNNU56QmpaRGM0WkdFNE9ESm1abU5oTXpVd05HTTNOelE9"></iframe>
+    <iframe class="iframeVideo" allow="encrypted-media" src="https://megadeportes.live/embed/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdDIucGhwP2dldD1hSFIwY0hNNkx5OHhNRFl6TFd4c0xYWnZjeTVrZEhadmRIUXVZMjl0TDBSQlUwaGZSRUZUU0M5TWFYWmxMMk5vWVc1dVpXd29URXd0VEdsMlpWOHhNRFl6S1M5dFlXNXBabVZ6ZEM1dGNHUT0ma2V5PVltRXlaalkzTTJVM09EVTJNek5rTkdFMVpHTm1OemRtTVdWbFl6WmhaRFk9JmtleTI9TkdJM01ERTROREZrT1RrNFlUVTJZelJqWlRobFpUSXlZVGcyTmpRNU5XST0="></iframe>
+  </div>
 </body>
 </html>
