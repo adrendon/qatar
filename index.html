@@ -7,35 +7,40 @@
   <title>Document</title>
 </head>
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-   }
-  .iframeVideo {
-      width: 50%;
-   }
-   #root {
-    position: fixed;
+.video-outer {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  height: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 50%;
+  height: 58.5vh;
+  max-width: 50%;
+}
+@media (max-width: 1024px) {
+  .video-container iframe {
+    height: 40.5vh;
     width: 100%;
-    height: 100%;
-   }
-   #root > iframe {
-    height: 490px;
-    float:left;
-    box-sizing:border-box;
-   }
-   @media (max-width: 1024px) {
-    #root > iframe {
-      height: 40.5vh;
-      width: 100%;
-      max-width: 100%;
-    }
+    max-width: 100%;
   }
+}
 </style>
 <body>
-  <div id="root">
-    <iframe class="iframeVideo" allow="encrypted-media" src="https://megadeportes.live/embed/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdC5waHA/Z2V0PWFIUjBjSE02THk5a2RIWnZkSFF0WVdKakxtRnJZVzFoYVhwbFpDNXVaWFF2WkdGemFGOXNhWFpsWHpFd05qRXZiV0Z1YVdabGMzUXViWEJrJmtleT1OekV4T1RBMk9XSTVPVEF4TldJMFpXSTVaV1UwTXpBd05UYzNNems1WlRJPSZrZXkyPVlqZzVPREkzWTJNNU56QmpaRGM0WkdFNE9ESm1abU5oTXpVd05HTTNOelE9"></iframe>
-    <iframe class="iframeVideo" allow="encrypted-media" src="https://megadeportes.live/embed/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdDIucGhwP2dldD1hSFIwY0hNNkx5OHhNRFl6TFd4c0xYWnZjeTVrZEhadmRIUXVZMjl0TDBSQlUwaGZSRUZUU0M5TWFYWmxMMk5vWVc1dVpXd29URXd0VEdsMlpWOHhNRFl6S1M5dFlXNXBabVZ6ZEM1dGNHUT0ma2V5PVltRXlaalkzTTJVM09EVTJNek5rTkdFMVpHTm1OemRtTVdWbFl6WmhaRFk9JmtleTI9TkdJM01ERTROREZrT1RrNFlUVTJZelJqWlRobFpUSXlZVGcyTmpRNU5XST0="></iframe>
+  <div class="video-outer">
+    <div class="video-container">
+      <iframe allow="encrypted-media" src="https://futbol-tv.online/repro/?r=Ly9nZXJtYW55aXAud29yay9zdi1tdDIucGhwP3VwZCZnZXQ9YUhSMGNITTZMeTh4TURVM0xXeHNMWFp2Y3k1a2RIWnZkSFF1WTI5dEwwUkJVMGhmUkVGVFNDOU1hWFpsTDJOb1lXNXVaV3dvVEV3dFRHbDJaVjh4TURVM0tTOXRZVzVwWm1WemRDNXRjR1E9JmtleT1ZbUl3WldOaFlUWmhaVFl5TXpNMk1UazNZelkwWkRReE1qbGpObUV3T1dRPSZrZXkyPVkySXdZbUpoTkRVeU1tWm1ZMlE1TUdFNFlqVXhOVFF4WVRCbVkyWmhaVEE9" width="100%" height="100%" name="iframe" id="iframe" frameborder="0" scrolling="no" style="position:absolute;" allowfullscreen=""></iframe>
+    </div>
   </div>
 </body>
 </html>
